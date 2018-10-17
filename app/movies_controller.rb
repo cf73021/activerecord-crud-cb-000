@@ -20,34 +20,33 @@ def can_be_created_with_a_hash_of_attributes
       lead: "Paul Newman",
       in_theaters: false
   }
-  movie = Movie.create(attributes)
+  movie = __
 end
 
-def can_be_created_in_a_block(args = {})
+def can_be_created_in_a_block(args = __)
   # If no arguments are passed, use default values:
   # title == "Home Alone"
   # release_date == 1990
 
   Movie.create do |m|
-    m.title = args[:title] || "Home Alone"
-    m.release_date = args[:release_date] || "1990"
+    __
   end
 end
 
 def can_get_the_first_item_in_the_database
-  Movie.first
+  __
 end
 
 def can_get_the_last_item_in_the_database
-  Movie.last
+  __
 end
 
 def can_get_size_of_the_database
-  Movie.count
+  __
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  Movie.find(1)
+  __
 end
 
 def can_find_by_multiple_attributes
